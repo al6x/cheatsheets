@@ -1,1 +1,1 @@
-Collection of Cheat Sheets, see `gh-pages` branch.
+Collection of Cheat Sheets.

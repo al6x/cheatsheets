@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>CSS Sheat Sheet</title>
+
+    <link href='assets/bootstrap/css/bootstrap.css' rel='stylesheet'>
+    <link href='assets/style.css' rel='stylesheet'>
+
+    <!--[if lt IE 9]>
+      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='row section'>
+
+        <!-- Layout -->
+        <div class='span6'>
+          <h2>Layout</h2>
+          <p>
+            <strong>padding, margin</strong><br/>
+            <strong>display</strong> <small>none, block, inline, inline-block</small><br/>
+            <strong>float</strong> <small><em>none</em>, left, right</small><br/>
+            <strong>clear</strong> <small><em>none</em>, left, right, both</small><br/>
+            <strong>position</strong> <small><em>static</em>, absolute, fixed, relative</small><br/>
+          </p>
+          <p>
+            <strong>vertical-align</strong> <small><em>baseline</em>, px, %, top, middle, bottom</small><br/>
+            <strong>text-align</strong> <small><em>left</em>, right, center, justify </small><br/>
+          </p>
+          <p>
+            overflow <small><em>visible</em>, hidden, scroll, auto</small><br/>
+            z-index<br/>
+            max-width, min-width<br/>
+            box-sizing <small><em>content-box</em>, border-box</small>
+          </p>
+        </div>
+
+        <!-- Style -->
+        <div class='span6'>
+          <h2>Style</h2>
+          <p>
+            <strong>font</strong> <small>family | <em>normal</em>, italic | size</small><br/>
+            <strong>font-weight</strong> <small><em>normal</em>, bold</small><br/>
+            <strong>color</strong> <small>#RGB, rgba</small><br/>
+            text-decoration <small><em>none</em>, underline, overline, line-through</small><br/>
+            line-height, text-shadow, white-space
+          </p>
+          <p>
+            <strong>background</strong> <small>transparent, color | transparent, image | <em>repeat</em>,
+              repeat-x, repeat-y, no-repeat</small><br/>
+            <strong>border</strong> <small>none, solid, transparent | px | color</small></br>
+          </p>
+          <p>
+            visibility <small><em>visible</em>, hidden</small></br>
+            border-radius, box-shadow, opacity, cursor, list-style
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class='row section'>
+
+        <!-- Selectors -->
+        <div class='span6'>
+          <h2>Selectors</h2>
+          <div class='row'>
+            <div class='span2'>
+              <p>
+                <strong>div#id</strong><br/>
+                <strong>div.class</strong><br/>
+              </p>
+              <p>
+                <strong>div span</strong><br/>
+                <strong>div > span</strong><br/>
+                <strong>div, span</strong><br/>
+              </p>
+              <p>
+                <small>a[attr='x']</small><br/>
+              </p>
+            </div>
+            <div class='span2'>
+              <p>
+                <small>:first-child</small><br/>
+                <small>:last-child</small><br/>
+              </p>
+              <p>
+                <small>:hover</small><br/>
+                <small>:active</small><br/>
+                <small>:focus</small><br/>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swatches -->
+        <div class='span6'>
+          <h2>Swatches</h2>
+          <p class='swatches'>
+            <small>
+              <span class='swatch' style='background-color: #000;'>#000</span>
+              <span class='swatch' style='background-color: #222;'>#222</span>
+              <span class='swatch' style='background-color: #333;'>#333</span>
+              <span class='swatch' style='background-color: #555;'>#555</span>
+              <span class='swatch' style='background-color: #999;'>#999</span>
+              <span class='swatch' style='background-color: #eee;'>#eee</span>
+              <span class='swatch' style='background-color: #fff;'>#fff</span>
+            </small>
+          </p>
+          <p class='swatches'>
+            <small>
+              <span class='swatch' style='background-color: #049cdb;'>#049cdb</span>
+              <span class='swatch' style='background-color: #46a546;'>#46a546</span>
+              <span class='swatch' style='background-color: #9d261d;'>#9d261d</span>
+              <span class='swatch' style='background-color: #ffc40d;'>#ffc40d</span>
+              <span class='swatch' style='background-color: #f89406;'>#f89406</span>
+              <span class='swatch' style='background-color: #c3325f;'>#c3325f</span>
+              <span class='swatch' style='background-color: #7a43b6;'>#7a43b6</span>
+            </small>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
