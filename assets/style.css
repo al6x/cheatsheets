@@ -2,7 +2,11 @@ body {
   margin-top: 1em;}
 
 body, p {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;}
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-weight: bold;}
+
+small {
+  font-weight: normal;}
 
 h1, h2, h3 {
   text-transform: uppercase;
