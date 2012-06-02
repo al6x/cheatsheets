@@ -21,20 +21,20 @@
           <h2>Layout</h2>
           <p>
             padding, margin<br/>
-            display <small>none, block, inline, inline-block</small><br/>
-            float <small><em>none</em>, left, right</small><br/>
-            clear <small><em>none</em>, left, right, both</small><br/>
-            position <small><em>static</em>, absolute, fixed, relative</small><br/>
+            display {none, block, inline, inline-block}<br/>
+            float {*none*, left, right}<br/>
+            clear {*none*, left, right, both}<br/>
+            position {*static*, absolute, fixed, relative}<br/>
           </p>
           <p>
-            vertical-align <small><em>baseline</em>, px, %, top, middle, bottom</small><br/>
-            text-align <small><em>left</em>, right, center, justify </small><br/>
+            vertical-align {*baseline*, px, %, top, middle, bottom}<br/>
+            text-align {*left*, right, center, justify }<br/>
           </p>
           <p>
-            overflow <small><em>visible</em>, hidden, scroll, auto</small><br/>
+            overflow {*visible*, hidden, scroll, auto}<br/>
             z-index<br/>
             max-width, min-width<br/>
-            box-sizing <small><em>content-box</em>, border-box</small>
+            box-sizing {*content-box*, border-box}
           </p>
         </div>
 
@@ -42,17 +42,17 @@
         <div class='span6'>
           <h2>Style</h2>
           <p>
-            font <small>family | <em>normal</em>, italic | size</small><br/>
-            font-weight <small><em>normal</em>, bold</small><br/>
-            color <small>#RGB, rgba</small><br/>
-            text-decoration <small><em>none</em>, underline, overline, line-through</small><br/>
+            font {family | *normal*, italic | size}<br/>
+            font-weight {*normal*, bold}<br/>
+            color {#RGB, rgba}<br/>
+            text-decoration {*none*, underline, overline, line-through}<br/>
             line-height, text-shadow, white-space
           </p>
           <p>
-            background <small>transparent, color | transparent, image | <em>repeat</em>,
-              repeat-x, repeat-y, no-repeat</small><br/>
-            border <small>none, solid, transparent | px | color</small></br>
-            visibility <small><em>visible</em>, hidden</small></br>
+            background {transparent, color | transparent, image | *repeat*,
+              repeat-x, repeat-y, no-repeat}<br/>
+            border {none, solid, transparent | px | color}</br>
+            visibility {*visible*, hidden}</br>
           </p>
           <p>
             border-radius, box-shadow, opacity</br>
@@ -85,13 +85,13 @@
             </div>
             <div class='span2'>
               <p>
-                <small>:first-child</small><br/>
-                <small>:last-child</small><br/>
+                {:first-child}<br/>
+                {:last-child}<br/>
               </p>
               <p>
-                <small>:hover</small><br/>
-                <small>:active</small><br/>
-                <small>:focus</small><br/>
+                {:hover}<br/>
+                {:active}<br/>
+                {:focus}<br/>
               </p>
             </div>
           </div>
@@ -128,6 +128,23 @@
 
     </div>
 
+    <!-- Ribbon -->
     <a href="http://github.com/alexeypetrushin/cheatsheets"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+
+    <!-- Scripts -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <script>
+      // Changing '{...}' to <small> and '*...*' to <em> tags.
+      $(function(){
+        $('p').each(function(e){
+          var e = $(this)
+          e.html(
+            (e.html() || '')
+              .replace(/\{(.+?)\}/g, '<small>$1</small>')
+              .replace(/\*(.+?)\*/g, '<em>$1</em>')
+          )
+        })
+      })
+    </script>
   </body>
 </html>
