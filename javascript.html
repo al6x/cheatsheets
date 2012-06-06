@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>JavaScript Sheat Sheet</title>
+
+    <link href='assets/bootstrap/css/bootstrap.css' rel='stylesheet'>
+    <link href='assets/style.css' rel='stylesheet'>
+
+    <!--[if lt IE 9]>
+      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='row section'>
+
+        <!-- Layout -->
+        <div class='span6'>
+
+          <!-- Array -->
+          <h2>Array</h2>
+          <p>
+            concat, indexOf<small>(obj, from) -> (index|-1)</small>, join, lastIndexOf, length, pop, push,
+            reverse, shift, slice<small>(from, to), sort(fn(a, b))</small>,
+            splice<small>(index, howMany)</small>, unshift, filter, forEach, every, map,
+            some, reduce<small>(fn(prev, curr))</small>, reduceRight
+          </p>
+
+          <!-- String -->
+          <h2>String</h2>
+          <p>
+            length, [], &lt;&gt;, indexOf<small>(el, from) -> (index|-1)</small>, lastIndexOf,
+            match<small>(re)</small>, replace<small>(str|re, str|$N|fn)</small>,
+            search<small>(str|re) -> (index|-1)</small>, slice<small>(from, to)</small>,
+            split<small>(str|re)</small>, toLowerCase, toUpperCase, trim
+          </p>
+
+          <!-- Object  -->
+          <h2>Object</h2>
+          <p>
+            hasOwnProperty, keys, prototype
+          </p>
+
+          <!-- RegExp -->
+          <h2>RegExp</h2>
+          <p>
+            exec, test
+          </p>
+          <p>
+            g <small>global</small>, i <small>ignore case</small>, m <small>multiline</small>, [\s\S]
+          </p>
+
+          <h2>Function</h2>
+          <p>
+            apply<small>(this, args)</small>, arguments, bind, call<small>(this, arg1, arg2, ...)</small>,
+            constructor, length
+          </p>
+        </div>
+
+        <!-- Style -->
+        <div class='span6'>
+          <h2>Special</h2>
+          <p>
+            Array Boolean Date Error Function Number Object RegExp String null undefined (+Infinity, -Infinity, NaN)
+          </p>
+          <p>
+            in, delete
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Ribbon -->
+    <a href="http://github.com/alexeypetrushin/cheatsheets"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+  </body>
+</html>
