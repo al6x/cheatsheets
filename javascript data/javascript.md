@@ -6,7 +6,7 @@ Array Boolean Date Error Function Iterator Number Object RegExp String  null und
 
 ## Array
 
-concat, indexOf(el, from) -> (index|-1), join, lastIndexOf, length, pop, push, reverse, shift, slice(from, to), sort(fn(a, b)), splice(index, howMany), unshift
+concat, indexOf(el, from) -> (index|-1), join, lastIndexOf, length, pop, push, reverse, shift, slice(from, to), sort(fn(a, b)), splice(index, count), unshift
 filter, forEach, every, map, some, reduce(fn(prev, curr)), reduceRight
 
 ## Date

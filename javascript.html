@@ -10,6 +10,12 @@
     <!--[if lt IE 9]>
       <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
     <![endif]-->
+
+    <style>
+      .underscore-functions {
+        color: #08C;
+      }
+    </style>
   </head>
 
   <body>
@@ -24,8 +30,11 @@
           <p>
             concat, indexOf<small>(obj, from) -> (index|-1)</small>, join, lastIndexOf, length, pop, push,
             reverse, shift, slice<small>(from, to), sort(fn(a, b))</small>,
-            splice<small>(from, howMany)</small>, unshift, filter, forEach, every, map,
+            splice<small>(from, count)</small>, unshift, filter, forEach, every, map,
             some, reduce<small>(fn(prev, curr))</small>, reduceRight
+          </p>
+          <p class='underscore-functions'>
+            sortBy<small>(fn|key)</small>
           </p>
 
           <!-- String -->
@@ -42,6 +51,10 @@
           <p>
             hasOwnProperty, keys, prototype
           </p>
+          <p class='underscore-functions'>
+            extend<small>(*objs)</small>, delete<small>(key)</small>, size, values,
+            keys, pick<small>(*keys)</small>
+          </p>
 
           <!-- RegExp -->
           <h2>RegExp</h2>
@@ -54,25 +67,39 @@
 
           <h2>Function</h2>
           <p>
-            apply<small>(this, args)</small>, arguments, bind, call<small>(this, arg1, arg2, ...)</small>,
+            apply<small>(this, args)</small>, arguments, bind, call<small>(this, *args)</small>,
             constructor, length
           </p>
         </div>
 
-        <!-- Style -->
+        <!-- Special -->
         <div class='span6'>
           <h2>Special</h2>
           <p>
-            Array Boolean Date Error Function Number Object RegExp String 
+            Array Boolean Date Error Function Number Object RegExp String
           </p>
           <p>
             null undefined (Infinity, -Infinity, NaN)
           </p>
           <p>
-            in, delete
+            in, delete, typeof, instanceof
+          </p>
+          <p class='underscore-functions'>
+            clone, isFunction, isEqual, isEmpty, isArray, isBlank
           </p>
         </div>
+      </div>
 
+      <!-- Note -->
+      <div class='row section'>
+        <div class='span12'>
+          <p class='pull-right'>
+            <small>
+              Blue functions belongs to
+              <a href='http://underscorejs.org'>Underscore.js</a>
+            </small>
+          </p>
+        </div>
       </div>
 
     </div>

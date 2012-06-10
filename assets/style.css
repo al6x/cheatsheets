@@ -1,22 +1,28 @@
 body {
-  margin-top: 1em;}
+  margin-top: 1em;
+}
 
 body, p {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 small {
-  font-weight: normal;}
+  font-weight: normal;
+}
 
 h1, h2, h3 {
   text-transform: uppercase;
-  color: #999;}
+  color: #999;
+}
 
 .section {
-  margin-top: 0.5em;}
+  margin-top: 0.5em;
+}
 
 .swatch {
   display: inline-block;
   padding: 0.5em;
   border-radius: 3px;
-  color: white;}
+  color: white;
+}
